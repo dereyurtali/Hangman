@@ -1,3 +1,8 @@
 import hangman
+import string
 
-print("");
+# The game starts.
+print("Welcome the game Hangman!");
+print("--Made by Ali Dereyurt--");
+
+
