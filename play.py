@@ -14,3 +14,4 @@ input_letter = input("Please guess a letter: ")
 
 
 
+print(string.ascii_lowercase)
