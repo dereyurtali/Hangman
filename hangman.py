@@ -91,42 +91,20 @@ def get_available_letters(letters_guessed):
     
 
 def hangman(secret_word):
-    '''
-    secret_word: string, the secret word to guess.
-    
-    Starts up an interactive game of Hangman.
-    
-    * At the start of the game, let the user know how many 
-      letters the secret_word contains and how many guesses s/he starts with.
-      
-    * The user should start with 6 guesses
+  secret_word = "apple"
+  guesses_remaining = 6
 
-    * Before each round, you should display to the user how many guesses
-      s/he has left and the letters that the user has not yet guessed.
-    
-    * Ask the user to supply one guess per round. Remember to make
-      sure that the user puts in a letter!
-    
-    * The user should receive feedback immediately after each guess 
-      about whether their guess appears in the computer's word.
-
-    * After each guess, you should display to the user the 
-      partially guessed word so far.
-    
-    Follows the other limitations detailed in the problem write-up.
-    '''
-    # FILL IN YOUR CODE HERE AND DELETE "pass"
-    pass
+  # The game starts.
+  print("Welcome the game Hangman!")
+  print("--Made by Ali Dereyurt--")
+  print("------------------------")
+  print("The secret word has " + str(len(secret_word)) + " letters.")
+  print("You have " + str(guesses_remaining) + " guesses. Good luck!")
+  input_letter = input("Please guess a letter: ")
+  print(string.ascii_lowercase)
 
 
 
-# When you've completed your hangman function, scroll down to the bottom
-# of the file and uncomment the first two lines to test
-#(hint: you might want to pick your own
-# secret_word while you're doing your own testing)
-
-
-# -----------------------------------
 
 
 
