@@ -66,13 +66,19 @@ def is_word_guessed(secret_word, letters_guessed):
 
 
 def get_guessed_word(secret_word, letters_guessed):
+  letter_bool = False
   return_word = ""
   for letter in secret_word:
     for letter_guessed in letters_guessed:
       if letter == letter_guessed:
-        return_word = return_word + letter
+        letter_bool = True
       else:
-        return_word = return_word + "_"
+        letter_bool = False
+    if letter_bool:
+      return_word = return_word + letter
+    else:
+      return_word = return_word + "_"
+
   return return_word
 
 
