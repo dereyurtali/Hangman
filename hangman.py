@@ -69,8 +69,8 @@ def get_guessed_word(secret_word, letters_guessed):
   letter_bool = False
   return_word = ""
   for letter in secret_word:
-    if not letter_bool:
-      for letter_guessed in letters_guessed:
+    for letter_guessed in letters_guessed:
+      if not letter_bool:
         if letter == letter_guessed:
           letter_bool = True
         else:
